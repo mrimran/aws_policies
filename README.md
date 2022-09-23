@@ -10,5 +10,16 @@ Using this policy file you can share full-access to the RDS service including Da
 Again development teams needs such permissions to work with the databases.
 
 
+## How to use?
+- Go in `IAM` >> `Policies` >> `Create policy`
+- Click on `JSON` tab
+- Copy the `JSON` from these files and `paste` it there
+- Click Next and finish these steps and create the policy.
 
-Note: You can tweak as per your needs. I created these files, because these step take time when are done for the first time.
+Once policy is created:
+- Click on policy
+- Click on `Policy usage`
+- Click on `Attach`
+- Choose required Role, group or user and click on `Attach policy`.
+
+**Note: You can tweak as per your needs. I created these files, because these step take time when are done for the first time.**
