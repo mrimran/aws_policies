@@ -1,4 +1,4 @@
-# Readymade AWS Policies
+# Ready to use AWS Policies
 In this repo I'm going to place the AWS policies that can save other's time.
 
 ## iam_manage_policies_policy.json
