@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "cloudwatch:GetMetricStatistics"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Action": [
+                "logs:GetLogEvents"
+            ],
+            "Effect": "Allow",
+            "Resource": "arn:aws:logs:*:*:log-group:RDSOSMetrics:log-stream:*"
+        },
+        {
+            "Action": [
+                "rds:DescribeDBClusters",
+                "rds:ModifyDBCluster",
+                "rds:DescribeDBInstances",
+                "rds:ModifyDBInstance",
+                "rds:DescribeGlobalClusters",
+                "rds:DescribeDBEngineVersions",
+                "rds:DownloadDBLogFilePortion",
+                "rds:DescribeOrderableDBInstanceOptions",
+                "rds:DescribeDBSecurityGroups",
+                "rds:DescribeDBSubnetGroups",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBClusterParameterGroups",
+                "rds:DescribeDBParameters",
+                "rds:DescribeDBLogFiles",
+                "rds-db:connect"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
